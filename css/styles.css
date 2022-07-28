@@ -451,9 +451,32 @@ transition: background-color var(--animation), color var(--animation);
     display: block;
     box-shadow: 0px 1px 1px  rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16 );
 }
-
-
-
+.portfolio-projects{
+    position: relative;
+    overflow: hidden;
+}
+.projects-card-link:hover .blue-overlay{
+    transform: translateY(0);
+}
+.blue-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(294px);
+    padding: 63px 24px;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    backdrop-filter: blur(1px);
+    transition: transform var(--animation);
+}
+.overlay-txt{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: var(--txt-color);
+}
 /*footer*/
 .footer {
     background-color: var(--dark-bg-cl);
